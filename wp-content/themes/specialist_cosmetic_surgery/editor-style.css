@@ -1,0 +1,471 @@
+/*
+Theme Name: Specialist Cosmetic Surgery
+Description: Used to style the TinyMCE editor.
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html .mceContentBody {
+	max-width: 800px;
+	padding: 20px;
+	background:#F8FBF5;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 16px;
+}
+body,
+#access,
+h1,
+h3,
+a.more-link,
+input,
+thead,
+a.top {
+	font-style: normal;
+	font-weight:normal;
+}
+strong,
+thead {
+	font-style: normal;
+	font-weight: bold;
+}
+body {
+	font-size:12px;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+/* Headings */
+
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 10px 0 5px;
+}
+h2,
+h3,
+h4,
+h5 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 18px;
+	line-height: 1.4em;
+	margin: 0 0 9px 0;
+	border-bottom: 0px solid #dddddd;
+	padding-bottom: 0px;
+	color:#1E3B4B;
+}
+h2 {
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	line-height: 25px;
+	color:#BF1E2E;
+}
+h2 a {
+	text-decoration: none;
+	color: #000;
+}
+h3 {
+	font-size: 18px;
+	margin: 20px 0 11px 0;
+	line-height: 22px;
+	color:#FDB813;
+}
+h4 {
+	font-size: 18px;
+	color:#F36F21;
+	margin: 0 0 10px 0;
+	line-height: 1.4;
+}
+h5 {
+	font-size: 16px;
+	color: #444444;
+	margin: 0 0 28px 0;
+	line-height: 1.4;
+}
+h6 {
+	font-size: 14px;
+	margin: 0 0 20px 0;
+	line-height: 1.4;
+}
+/* Styles */
+p {
+	font-size:14px;
+	font-weight: normal;
+	line-height:20px;
+	margin-bottom: 10px;
+	color:#4E6570;
+}
+p strong {
+	font-size: 14px;
+	font-weight: 700;
+}
+a {
+	color: #f36f21;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color:#da5221;
+	border-bottom:1px solid #f36f21;
+	-webkit-transition:color 0.2s ease-in;
+	-moz-transition:color 0.2s ease-in;
+	-o-transition:color 0.2s ease-in;
+	transition:color 0.2s ease-in;
+}
+strong,
+b {
+	font-weight: bold;
+}
+hr {
+	color: #dddddd;
+	background: #dddddd;
+	border: 0;
+	height: 1px;
+	/*margin: 10px 0 31px;*/
+	margin: 35px 0 32px;
+	display:block;
+	clear:both;
+}
+/* Text elements */
+ul {
+	margin-bottom: 30px;
+}
+ol {
+	margin-bottom: 30px;
+}
+ul li {
+	padding-left: 17px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	list-style: none;
+	line-height: 20px;
+	background:url(images/li-arrow.png) no-repeat 0px 7px;
+	color:#666;
+}
+ul li.information {
+	background:url(images/pdf_ico.gif) no-repeat 0 0;
+	padding:0 0 0 25px;} 
+ol li {
+	padding-left: 2px;
+	margin-left: 19px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color:#666;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.625em;
+}
+dt {
+	font-size: 15px;
+	font-weight: bold;
+}
+dd {
+	margin: 0 0 1.625em;
+}
+strong {
+	font-weight: bold;
+}
+cite,
+em,
+i {
+	font-style: italic;
+}
+cite {
+	border: none;
+}
+big {
+	font-size: 131.25%;
+}
+.mceContentBody blockquote {
+	position: relative;
+	background:#fff;
+	border-top:0px solid #dddddd;
+	padding: 24px 32px 14px 32px;
+	font-style: normal;
+	font-size: 14px;
+	color:#000;
+	margin: 0 0 22px 0;
+	clear: both;
+}
+.mceContentBody blockquote p {
+	line-height: 1.4 !important;
+	margin: 0 0 12px 0 !important;
+	font-size: 14px;
+}
+pre {
+	background: #f4f4f4;
+	font: 13px "Courier 10 Pitch", Courier, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.625em;
+	padding: 0.75em 1.625em;
+}
+code,
+kbd,
+code var {
+	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr,
+acronym,
+dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+address {
+	display: block;
+	margin: 0 0 1.625em;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	border: none;
+	color: #333;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+input[type=text],
+textarea {
+	background: #fafafa;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #ddd;
+	color: #888;
+}
+input[type=text]:focus,
+textarea:focus {
+	color: #333;
+}
+textarea {
+	padding-left: 3px;
+	width: 98%;
+}
+input[type=text] {
+	padding: 3px;
+}
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*tables*/
+table {
+	width:500px;
+	border-collapse: collapse;
+	margin-top:15px;
+	margin-bottom:30px;
+	font-size:16px !important;
+}
+/* Zebra striping */
+tr {
+	background: #242424;
+}
+th {
+	background: #1b1b1b;
+	color: white;
+	font-weight: bold;
+}
+td {
+	color:#777777 !important;
+	font-size: 16px !important;
+}
+td,
+th {
+	padding: 11px;
+	border: 1px solid #000;
+	text-align: left;
+}
+/* Images */
+img[class*="wp-image-"] {
+	height: auto;
+	max-width: 97.5%;
+}
+img.size-full {
+	width: auto; /* Prevent stretching of full-size images in IE8 */
+}
+img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+p img,
+.wp-caption {
+	margin-top: 0.4em;
+}
+img {
+	border: none;
+	padding: 0px;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 1.625em;
+}
+.wp-caption {
+	background: #fff;
+	border: none;
+	margin-bottom: 20px;
+	max-width: 630px !important;
+	padding: 0px;
+	border-radius: 0 !important;
+}
+.wp-caption img {
+	display: block;
+	clear:both;
+	margin: 0px auto 0 !important;
+	max-width: 100%;
+	border-color: red;
+}
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+	color: #4E6570;
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 12px;
+	margin: 0 0 22px 0 !important;
+	padding: 9px 0 14px;
+	position: relative;
+	text-align: center;
+}
+.wp-caption .wp-caption-text:before {
+	color: #666;
+	content: '\2014';
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	margin-right: 5px;
+	position: absolute;
+	left: 10px;
+	top: 7px;
+}
+a:focus img[class*="wp-image-"],
+a:hover img[class*="wp-image-"],
+a:active img[class*="wp-image-"] {
+	background: #eee;
+}
+.wp-caption a:focus img,
+.wp-caption a:active img,
+.wp-caption a:hover img {
+	background: #fff;
+}

@@ -1,0 +1,268 @@
+#lightbox {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox a img {
+	border: none;
+}
+#outerImageContainer {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	padding:10px 10px 0;
+}
+#imageContainer {
+	padding: 10px;
+}
+#loading {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#hoverNav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#imageContainer>#hoverNav {
+	left: 0;
+}
+#hoverNav a {
+	outline: none;
+}
+#prevLink, #nextLink {
+	width: 49%;
+	height: 100%;
+	background: transparent url(blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+}
+#prevLink {
+	left: 0;
+	float: left;
+}
+#nextLink {
+	right: 0;
+	float: right;
+}
+#prevLink:hover, #prevLink:visited:hover {
+	
+}
+#nextLink:hover, #nextLink:visited:hover {
+	
+}
+/*** START : next / previous text links ***/
+#numberDisplay .sep{
+	text-indent: -999px;
+	overflow: hidden;
+	float: left;
+	width: 12px;
+	height: 30px;
+	background: url(seperator.png) no-repeat center 9px;
+
+}
+#nextLinkText, #prevLinkText {
+	color: #74777f;
+	line-height:33px;
+	text-decoration: none;
+	text-transform:uppercase;	
+		
+}
+#nextLinkText {
+	
+	overflow: hidden;
+	width: auto;
+	height: 30px;
+	
+	float: left;
+}
+#nextLinkText:hover {
+	color:#343741;
+}
+#nextLinkTextDis {
+	float: left;
+	
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	
+}
+#prevLinkText {
+	
+	overflow: hidden;
+	width: auto;
+	height: 30px;
+
+	float: left;
+}
+
+#prevLinkText:hover {
+	color:#343741;
+}
+#prevLinkTextDis {
+	text-indent: -999px;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+
+	float: left;
+}
+/*** END : next / previous text links ***/
+/*** START : added padding when navbar is on top ***/
+
+.ontop #imageData {
+	padding-top: 5px;
+}
+/*** END : added padding when navbar is on top ***/
+ #imageData span{
+	 	/*display:block !important;*/
+ }
+#caption{
+	padding: 0 10px 0 0;
+	text-align: left;
+	color:#766556;
+	font-size:14px;
+	line-height:14px;
+	float:left;
+}
+#caption h2{
+	
+	line-height: 33px;
+	color: #74777f;
+	font-weight: Regular;
+	margin: 0;
+	font-size:14px;
+	padding-left:50px;
+	background:url(popup-logo.png) no-repeat 0 0;
+	font-family: 'rbno3.1_bookregular';
+	float:left;
+}
+#caption p{
+	font-size: 12px;
+	line-height: 18px;
+	color: #636363;
+	margin: 0 0 8px;
+}
+#caption a{
+	color: #292929;
+	text-decoration: none;
+}
+#caption a:hover{
+	text-decoration: underline;
+}
+#imageDataContainer {
+	color: #f8f8f8;
+	font-size: 13px;
+	line-height: 20px;	
+	background-color: #fff;
+	margin: -1px auto 0;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;	
+	padding:7px 10px;
+	width:0;
+}
+#imageData {
+	padding:1px 10px 10px;
+	min-height: 30px;
+	position:relative;
+}
+#imageData .clearfix{
+	height: 33px;
+	overflow: hidden;
+	background:  url(prev_next.png) no-repeat 0 100%;
+}
+#imageData #imageDetails {
+	float: right;
+	width: auto;
+	margin: 0;
+	text-align: left;
+	
+}
+#imageData #caption {
+	font-weight: normal;
+	
+}
+#imageData #numberDisplay {
+	float: right;
+	display: block;
+	clear: left;
+	padding-bottom: 0;
+	margin: 0;
+}
+#bottomNav {
+    float: right;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+    right: 41px;
+    top: 1px;
+    width: 30px;
+}
+#imageData #bottomNavClose {
+	width: 30px;
+	height: 30px;
+	padding-bottom: 0em;
+	/*text-indent: 999px;*/
+	overflow: hidden;
+	/*background: url(prev_next.png) no-repeat -31px 0;*/
+	
+	position: absolute;
+	z-index: 9;
+	/*left: 0;
+	top: 0;*/
+	display:none;
+}
+/*#imageData #bottomNavClose:hover {
+	background: url(prev_next.png) no-repeat -31px -31px;
+}*/
+#imageData #helpDisplay {
+	clear: left;
+	float: left;
+	display: block;
+}
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	min-width: 930px;
+	height: 500px;
+	background-color: #000;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	display: none;
+}
+/* Clearfix */
+.clearfix:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+}
+.clearfix {
+	display:inline-block;
+}
+html[xmlns] .clearfix {
+	display:block;
+}
+* html .clearfix {
+	height:1%;
+}
+
+

@@ -1,0 +1,410 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Google+ Author Information in Search Results\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-27 11:34+0100\n"
+"PO-Revision-Date: 2014-06-27 11:34+0100\n"
+"Last-Translator: WP-Buddy <info@wp-buddy.com>\n"
+"Language-Team: Andrew Kurtis <andrewk@webhostinghub.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class.profile.php:33
+msgid "Google+"
+msgstr "Google+"
+
+#: ../class.settings.php:82
+msgid "Google+ Author Free"
+msgstr "Google+ Author Gratis"
+
+#: ../class.settings.php:97
+msgid "General"
+msgstr "General"
+
+#: ../class.settings.php:100
+msgid "What to do"
+msgstr "Qué hacer"
+
+#: ../class.settings.php:103 ../class.settings.php:485
+msgid "Settings"
+msgstr "Ajustes"
+
+#: ../class.settings.php:106
+msgid "About"
+msgstr "Acerca de"
+
+#: ../class.settings.php:109
+msgid "Share"
+msgstr "Compartir"
+
+#: ../class.settings.php:111
+msgid "Discover"
+msgstr "Descubrir"
+
+#: ../class.settings.php:114
+msgid "Helpful links"
+msgstr "Enlaces útiles"
+
+#: ../class.settings.php:141
+msgid ""
+"This plugin will replace your author link in your template with your Google+ "
+"Profile link to make sure that your Google+ profile picture will be shown in "
+"the search results and/or Google News."
+msgstr ""
+"Este plugin reemplazará su enlace de autor en su plantilla con su enlace del "
+"Perfil de  Google+ para asegurar que la imagen se mostrará en los resultados "
+"de la búsqueda."
+
+#: ../class.settings.php:142
+msgid ""
+"Alternatively the link can be included after the content if your template "
+"does not show the author  link."
+msgstr ""
+"Alternativamente el enlace puede ser incluido luego del contenido si su "
+"plantilla no muestra el enlace del autor."
+
+#: ../class.settings.php:144
+msgid "Please note:"
+msgstr "Por favor note:"
+
+#: ../class.settings.php:144
+msgid ""
+"Google says that there is no guarantee that a Rich Snippet will be shown for "
+"your page on actual search results."
+msgstr ""
+"Google dice que no hay garantía de que un Rich Snippet se mostrará en su "
+"página en los resultados de búsqueda actuales."
+
+#: ../class.settings.php:144
+msgid "Please click here for more information"
+msgstr "Por favor haga clic aquí para más información"
+
+#: ../class.settings.php:162
+msgid "A) Set up authorship by linking your content to your Google+ profile"
+msgstr "A) Configure la autoría enlazando su contenido a su perfil de Google+"
+
+#: ../class.settings.php:166
+#, php-format
+msgid "Follow this link to open your Google+ profile: %s"
+msgstr "Siga este enlace para abrir su perfil de Google+: %s"
+
+#: ../class.settings.php:168
+msgid ""
+"Copy your Profile-URL from the address bar to clipboard (see picture below):"
+msgstr ""
+"Copie su URL del Perfil de la barra de dirección al portapapeles (vea la "
+"figura siguiente):"
+
+#: ../class.settings.php:173
+msgid ""
+"Go to your Wordpress Admin Panel and click Users -> Your Profile. Paste the "
+"above mentioned URL to the field where it says \"Google+\"."
+msgstr ""
+"Vaya a su Panel de Administración de Wordpress y haga clic en Usuarios -> Su "
+"Perfil. Pegue la URL mencionada anteriormente al campo donde dice \"Google+"
+"\"."
+
+#: ../class.settings.php:178
+msgid "Click Update Profile."
+msgstr "Haga Clic para Actualizar Perfil."
+
+#: ../class.settings.php:180
+msgid ""
+"Repeat the above steps with all the other Wordpress authors on your blog."
+msgstr ""
+"Repetir los pasos anteriores con todos los otros autores de Wordpress en su "
+"blog."
+
+#: ../class.settings.php:185
+msgid ""
+"B) Add a reciprocal link back from your profile to the site you just updated"
+msgstr ""
+"B) Adicionar un enlace recíproco de vuelta de su perfil al sitio que "
+"actualizó"
+
+#: ../class.settings.php:189
+#, php-format
+msgid "Follow this link to edit the Contributor To section: %s"
+msgstr "Siga este enlace para editar la sección Contribuir A: %s"
+
+#: ../class.settings.php:192
+#, php-format
+msgid ""
+"A dialog will appear. Scroll down to the \"Contributor to\" section. Click "
+"\"Add custom link\" and enter your website URL: %s"
+msgstr ""
+"Un diálogo aparecerá. Haga scroll hacia abajo a la sección \"Contribuir A\". "
+"Haga clic en \"Adicionar enlace personalizado\" y entre la URL de su sitio "
+"web: %s"
+
+#: ../class.settings.php:194
+#, php-format
+msgid "Optional: For the label you can use your website title: %s"
+msgstr ""
+"Opcional: Para la etiqueta usted puede usar su título del sitio web: %s"
+
+#: ../class.settings.php:196
+msgid "If you want, click the drop-down list to specify who can see the link."
+msgstr ""
+"Si usted quiere, haga clic en la lista desplegable para especificar quién "
+"puede ver el enlace."
+
+#: ../class.settings.php:198
+msgid "Click Save."
+msgstr "Haga clic en Salvar."
+
+#: ../class.settings.php:200
+msgid "Tell your authors that they should also do step B."
+msgstr "Dígale a sus autores que deberían también hacer el paso B."
+
+#: ../class.settings.php:205
+msgid "C) Test"
+msgstr "C) Probar"
+
+#: ../class.settings.php:209
+msgid ""
+"To see what author data Google can extract from your page, use the Rich "
+"Snippet Testing Tool."
+msgstr ""
+"Para ver qué dato del autor de Google puede extraer de su página, use la "
+"Herramienta de Prueba de Rich Snippet."
+
+#: ../class.settings.php:248
+msgid "Test the latest post or page."
+msgstr "Pruebe el último post o página."
+
+#: ../class.settings.php:326
+msgid "Add to the header"
+msgstr "Adicionar al encabezado"
+
+#: ../class.settings.php:328
+msgid "Replace author link with the Google Profile URL?"
+msgstr "¿Reemplazar el enlace del autor con la URL del Perfil de Google?"
+
+#: ../class.settings.php:330
+msgid "Show or hide the link in the content-section?"
+msgstr "¿Mostrar u ocultar el enlace en la sección de contenido?"
+
+#: ../class.settings.php:332
+msgid "Open the link in a new window?"
+msgstr "¿Abrir el enlace en una nueva ventana?"
+
+#: ../class.settings.php:334
+msgid "Display in Feed?"
+msgstr "¿Mostrar en Feed?"
+
+#: ../class.settings.php:336
+msgid "Link text"
+msgstr "Texto del enlace"
+
+#: ../class.settings.php:352
+msgid ""
+"Not every theme shows the Author-Link right beside a page or an article. In "
+"this case activate the link to be included after the content."
+msgstr ""
+"No todos los temas muestran el Enlace del Autor luego de una página o un "
+"artículo. En este caso active el enlace para ser incluído en el contenido."
+
+#: ../class.settings.php:362
+msgid "(Recommended. Not visible to the user.)"
+msgstr "(Recomendado. No visible por el usuario.)"
+
+#: ../class.settings.php:398
+msgid "Yes"
+msgstr "Sí"
+
+#: ../class.settings.php:398
+msgid "(Please note: Some themes does not support this.)"
+msgstr "(Por favor note: Algunos temas no soportan esto.)"
+
+#: ../class.settings.php:399
+msgid "No"
+msgstr "No"
+
+#: ../class.settings.php:399
+msgid "Instead show it in the content-area (see below)"
+msgstr "En vez de mostrarlo en el área de contenido (ver debajo)"
+
+#: ../class.settings.php:416
+msgid "Hide"
+msgstr "Ocultar"
+
+#: ../class.settings.php:416
+msgid "(Please not that Google does not like hidden links)"
+msgstr "(Por favor note que a Google no le gusta los enlaces ocultos)"
+
+#: ../class.settings.php:417
+msgid "Show"
+msgstr "Mostrar"
+
+#: ../class.settings.php:445
+msgid "Check this if you want to display the Google+ Link inside the feeds."
+msgstr ""
+"Seleccione esto si usted quiere mostrar el Enlace de Google+ dentro de los "
+"feeds."
+
+#: ../class.settings.php:472
+msgid ""
+"Need more options and an automatic test? Check out the Extended Version of "
+"this Plugin"
+msgstr ""
+"¿Necesita más opciones y una prueba automática? Chequee la Versión Extendida "
+"de este Plugin"
+
+#: ../class.settings.php:486
+msgid "More Plugins by WPBuddy"
+msgstr "Más Plugins por WPBuddy"
+
+#: ../class.settings.php:500
+msgid "Installation manual"
+msgstr "Manual de Instalación"
+
+#: ../class.settings.php:503
+msgid "Support forum"
+msgstr "Foro de Soporte"
+
+#: ../class.settings.php:506
+msgid "Changelog"
+msgstr "Log de Cambios"
+
+#: ../class.settings.php:508
+msgid "Get the full version"
+msgstr "Obtener la versión completa"
+
+#: ../class.settings.php:509
+msgid "More cool stuff by WPBuddy"
+msgstr "Más cosas interesantes por WPBuddy"
+
+#: ../page.settings.php:3
+msgid "Google+ Authorship (Free) Settings"
+msgstr "Ajustes (Gratis) de Autoría de Google+"
+
+#~ msgid "Only applied when link is displayed after the content"
+#~ msgstr ""
+#~ "Wird nur angewandt, wenn der Link nach dem Inhaltsbereich angezeigt wird"
+
+#~ msgid "Go to the plugins page"
+#~ msgstr "Wechseln Sie zur Plugin-Website"
+
+#~ msgid "Google Plus Author Information in Search Result (GPAISR)"
+#~ msgstr "Google Plus Author Information in Search Results (GPAISR)"
+
+#~ msgid ""
+#~ "If Google cannot extract your profile picture, please read the FAQ which "
+#~ "you can find in the documentation delivered with this plugin."
+#~ msgstr ""
+#~ "Wenn Google Ihr Profilbild nicht extrahieren kann lesen Sie bitte die "
+#~ "FAQ, die Sie in der Dokumentation finden, die mit diesem Plugin "
+#~ "ausgeliefert wurde."
+
+#~ msgid "Open the documentation now."
+#~ msgstr "Die Dokumentation jetzt öffnen."
+
+#~ msgid "Create a Google+ Profile"
+#~ msgstr "Erstellen Sie ein Google+ Profil"
+
+#~ msgid "Click here to open your profile"
+#~ msgstr "Klicken Sie hier um Ihr Profil zu öffnen"
+
+#~ msgid ""
+#~ "Find your Google+ Profile link by visiting your own page and copy the "
+#~ "link (shown and marked in the image below) to clipboard"
+#~ msgstr ""
+#~ "Finden Sie Ihren eigenen Google+ Profillink indem Sie Ihre eigenen "
+#~ "Profilseite besuchen. Kopieren Sie dann den entsprechenden Link in die "
+#~ "Zwischenablage (siehe Bild unten)"
+
+#~ msgid "Activate this plugin."
+#~ msgstr "Aktivieren Sie dieses Plugin."
+
+#~ msgid "Go to your profile page"
+#~ msgstr "Wechseln Sie zur Blog-Profilseite"
+
+#~ msgid "and paste your profile link where it says \"Google Plus Link\""
+#~ msgstr ""
+#~ "und fügen Sie den gerade kopierten Google+ Profillink in das Feld "
+#~ "\"Google Plus Link\""
+
+#~ msgid ""
+#~ "Do not add the tag \"?ref=author\" because that will be added "
+#~ "automatically."
+#~ msgstr ""
+#~ "Fügen Sie nicht \"?ref=author\" am Ende an. Es wird automatisch "
+#~ "angehängt. "
+
+#~ msgid ""
+#~ "Go to Settings > Google Plus Author and make changes if needed (this page "
+#~ "- see below)"
+#~ msgstr ""
+#~ "Gehen Sie in Einstellungen > Google Plus Author und legen Sie alle "
+#~ "nötigen Einstellungen fest (siehe unten)"
+
+#~ msgid ""
+#~ "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=1408986"
+#~ msgstr ""
+#~ "http://support.google.com/webmasters/bin/answer.py?hl=de&answer=1408986"
+
+#~ msgid "Test your site using the"
+#~ msgstr "Testen Sie Ihre Seite. Benutzen Sie dazu das"
+
+#~ msgid ""
+#~ "If you can see your profile picture everything is okay. If not, you have "
+#~ "made something wrong."
+#~ msgstr ""
+#~ "Wenn Sie Ihr Profilbild sehen können ist alles OK. Wenn nicht, haben Sie "
+#~ "etwas falsch gemacht."
+
+#~ msgid "In Feed?"
+#~ msgstr "Im Feed anzei"
+
+#~ msgid "If you like this plugin, please click: "
+#~ msgstr "Wenn du das Plugin magst, bitte klicke hier:"
+
+#~ msgid ""
+#~ "If you have submitted an RSS-Feed to iTunes and want to change the url to "
+#~ "a new feed address you may know that iTunes does not provide a form or "
+#~ "something like this. Instead you need a little code-snippet in your RSS "
+#~ "2.0-Feed to change the URL. This plugin will help you to do this."
+#~ msgstr ""
+#~ "Wenn Du einen RSS-Feed in iTunes importiert hast und diese URL nun ändern "
+#~ "willst, wirst du feststellen, dass das gar nicht so einfach ist. Man "
+#~ "benötigt einen kleinen Code direkt im RSS-Feed um die Weiterleitung "
+#~ "einzuleiten. Dieses Plugin hilft dir dabei."
+
+#~ msgid "Check my feed with the W3C Feed Validator"
+#~ msgstr "Meinen Feed auf Gültigkeit prüfen (W3C Feed Validator)"
+
+#~ msgid "RSS iTunes Redirection Settings"
+#~ msgstr "Einstellungen"
+
+#~ msgid "New URL to redirect"
+#~ msgstr "Neue Feed-URL"
+
+#~ msgid "Will add the namespace"
+#~ msgstr "Folgender Namespace wird hinzugefügt"
+
+#~ msgid ""
+#~ "If you are using a podcast plugin please check if this plugin adds the "
+#~ "namespace. If so, you do not need it again. If you are not using any of "
+#~ "these plugins you normally need the namespace. Just check your feed "
+#~ "whether you get an error or not:"
+#~ msgstr ""
+#~ "Wenn du ein Podcast-Plugin benutzt, welches den Namespace <strong>xmlns:"
+#~ "itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\"</strong> zum Feed "
+#~ "hinzufügt, brauchst du den Namespace nicht noch einmal hinzufügen. Wenn "
+#~ "du kein Podcast-Plugin benutzt benötigst du den Namespace normalerweise "
+#~ "schon. Öffne einfach deinen Feed und sehe nach, ob ein Fehler entsteht:"
+
+#~ msgid ""
+#~ "If you are using feedburner: Click on Troubleshootize -> Resync to update "
+#~ "your feed on this platform as well."
+#~ msgstr ""
+#~ "Wenn du Feedburner benutzt: Clicke auf Troubleshootize -> Resync um den "
+#~ "Feed auch dort zu aktualisieren."
