@@ -29,6 +29,8 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+*.swp
+*.swo
 
 
 #==================#
