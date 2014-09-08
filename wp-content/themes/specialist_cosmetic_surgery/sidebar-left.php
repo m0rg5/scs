@@ -34,7 +34,11 @@
       <?php
 					  endforeach;?>
     </ul>
+<?php
+        /*
 		 <a class="parent_link" href="<?php echo get_permalink($post->post_parent); ?>">&laquo; Back to <?php echo get_the_title($post->post_parent); ?> </a>
+         */
+?>
 </div>
  
   <?php
