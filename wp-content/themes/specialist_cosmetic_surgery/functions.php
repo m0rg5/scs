@@ -564,3 +564,13 @@ $embed_size['height'] = 380;
 return $embed_size;
 }
 add_filter('embed_defaults', 'embed_defaults');
+
+function quicktags_script() {
+    wp_register_script( 'mediaelementjs', '/wp-includes/js/mediaelement/mediaelement-and-player.min.js','','',true);
+    wp_enqueue_script( 'mediaelementjs' );
+
+    wp_register_style( 'mediaelementcss', '/wp-includes/js/mediaelement/mediaelementplayer.min.css','','',true);
+    wp_enqueue_style( 'mediaelementcss' );
+}
+
+add_action( 'wp_enqueue_scripts', 'quicktags_script' );
