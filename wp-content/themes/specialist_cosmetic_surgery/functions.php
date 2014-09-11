@@ -565,7 +565,8 @@ return $embed_size;
 }
 add_filter('embed_defaults', 'embed_defaults');
 
-function quicktags_script() {
+/*mediaelementjs is included by default , we can use it by using [video] shortcode*/
+/*function quicktags_script() {
     wp_register_script( 'mediaelementjs', '/wp-includes/js/mediaelement/mediaelement-and-player.min.js','','',true);
     wp_enqueue_script( 'mediaelementjs' );
 
@@ -573,4 +574,4 @@ function quicktags_script() {
     wp_enqueue_style( 'mediaelementcss' );
 }
 
-add_action( 'wp_enqueue_scripts', 'quicktags_script' );
+add_action( 'wp_enqueue_scripts', 'quicktags_script' );*/
