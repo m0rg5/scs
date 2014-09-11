@@ -71,7 +71,15 @@ s.parentNode.insertBefore(pa, s);
        })();
 </script>
 <!-- end jet phone-analytics -->
-
+<script src="<?php echo includes_url('/js/stickUp.min.js'); ?>"></script>
+<!--STICKY MENU-->
+<script type="text/javascript">
+jQuery(function($) {
+    $(document).ready( function() {
+        $('.navigation').stickUp();
+    });
+});
+</script>
 
 <?php wp_footer(); ?>
 <!--delacon tracking code start-->
