@@ -237,7 +237,7 @@ var player = new YT.Player('youtubevideo', {
 			   ?>
 			     <li <?php if(trim($video_url)) { ?> class="slide play3" <?php }?>>
 				<?php if(trim($video_url)) { ?>
-				    <iframe id="video" width="100%" height="320" src="<?php echo $video_url; ?>?enablejsapi=1&version=3&playerapiid=youtubevideo&hd=1;rel=0;controls=0;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				    <iframe style="margin-top:-20px;" id="video" width="100%" height="380" src="<?php echo $video_url; ?>?enablejsapi=1&version=3&playerapiid=youtubevideo&hd=1;rel=0;controls=0;showinfo=0" frameborder="0" allowfullscreen></iframe>
 				<?php } else { ?>
 				 
 				<?php if($banner_img_large){ ?>
@@ -247,7 +247,7 @@ var player = new YT.Player('youtubevideo', {
 					
 					 <?php the_content(); ?>
 					  <?php if($target_url){ ?>
-					  <a href="<?php if($target_url=='#'){echo 'javascript: void(0)';} else { echo $target_url; }?>" <?php if($target){ echo 'target="_balnk"'; } ?> class="readmore">Read More</a>
+					  <a href="<?php if($target_url=='#'){echo 'javascript: void(0)';} else { echo $target_url; }?>" <?php if($target){ echo 'target="_blank"'; } ?> class="readmore">Read More</a>
 					  <?php } ?>
 					  
 				    </div>
