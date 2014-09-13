@@ -76,7 +76,7 @@ s.parentNode.insertBefore(pa, s);
 <script type="text/javascript">
 jQuery(function($) {
     $(document).ready( function() {
-        $('.navigation').stickUp();
+        $('.navigation').stickUp({ topMargin: -120 });
     });
 });
 </script>

@@ -1076,6 +1076,12 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 /*style for sticky menu - atheotsky*/
 .isStuck {
     z-index: 100;
+    margin-top: -5px;
+    height: 50px;
 }
 .isStuck #access .sf-menu>li>a {
+    height: 22px;
+}
+.isStuck #access .sf-menu ul {
+    top: 50px;
 }
