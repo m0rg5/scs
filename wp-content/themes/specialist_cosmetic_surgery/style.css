@@ -1081,6 +1081,7 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 }
 .isStuck #access .sf-menu>li>a {
     height: 22px;
+    font-size: 14px;
 }
 .isStuck #access .sf-menu ul {
     top: 50px;
