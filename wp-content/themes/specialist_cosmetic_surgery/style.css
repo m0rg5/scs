@@ -1072,3 +1072,8 @@ body .royalSlider { height: 219px; overflow: hidden; }
 div.wpcf7-mail-sent-ok { display: none !important; }
 
 .flexslider .slides > li {position:relative;}
+
+/*style for sticky menu - atheotsky*/
+.is-sticky .navigation { z-index: 999; }
+.is-sticky .small #access .sf-menu ul { top: 58px; }
+.sticky-wrapper { margin-bottom: 33px; }

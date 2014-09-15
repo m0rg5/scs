@@ -72,6 +72,46 @@ s.parentNode.insertBefore(pa, s);
 </script>
 <!-- end jet phone-analytics -->
 
+<!--STICK MENU WITH ANIMATION-->
+<script src="<?php echo includes_url('/js/jquery.sticky.js'); ?>"></script>
+<script type="text/javascript">
+var wrapperClass = '.navigation';
+var oHeight = $(wrapperClass).height();
+var oLHeight = parseInt($('#menu-main-navigation > li').css('line-height'));
+var maxReduce = 20;
+$(document).ready(function(){
+    $(wrapperClass).sticky({topSpacing:0});
+});
+
+$(window).scroll(function(){
+    $(wrapperClass).find('#menu-main-navigation > li >  a').css('line-height','auto');
+    if($(window).scrollTop() > $('.sticky-wrapper').offset().top)
+    {
+        var m = $(window).scrollTop() - $('.sticky-wrapper').offset().top;
+        reduce = m > maxReduce ? maxReduce : m;
+        var nHeight = oHeight - reduce;
+        var nLHeight = oLHeight - reduce;
+        $(wrapperClass).css('height', nHeight+'px');
+        $('.sub-menu').css('top', nHeight+'px')
+        $(wrapperClass).find('#menu-main-navigation > li').css('height', nHeight+'px');
+        $(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', nLHeight+'px');
+        if (m > 8) {
+            $(wrapperClass).find('#menu-main-navigation > li >  a').css('font-size','15px');
+        }
+        if (m > 15) {
+            $(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','14px');
+        }
+    }
+    else {
+        //restore to original state
+        $(wrapperClass).css('height', oHeight+'px');
+        $(wrapperClass).find('#menu-main-navigation > li').css('height', oHeight+'px');
+        $(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','16px');
+        $(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', oLHeight+'px');
+    }
+});
+</script>
+<!--END OF STICKY MENU-->
 
 <?php wp_footer(); ?>
 <!--delacon tracking code start-->
