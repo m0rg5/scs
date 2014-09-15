@@ -76,36 +76,38 @@ s.parentNode.insertBefore(pa, s);
 <script src="<?php echo includes_url('/js/jquery.sticky.js'); ?>"></script>
 <script type="text/javascript">
 var wrapperClass = '.navigation';
+var oHeight = $(wrapperClass).height();
+var oLHeight = parseInt($('#menu-main-navigation > li').css('line-height'));
+var maxReduce = 20;
 $(document).ready(function(){
     $(wrapperClass).sticky({topSpacing:0});
 });
 
-$(function(){
-    $(wrapperClass).data('size','big');
-});
-
 $(window).scroll(function(){
+    $(wrapperClass).find('#menu-main-navigation > li >  a').css('line-height','auto');
     if($(window).scrollTop() > $('.sticky-wrapper').offset().top)
     {
-        if($(wrapperClass).data('size') == 'big')
-        {
-            $(wrapperClass).data('size','small');
-            $(wrapperClass).stop().animate({
-                zoom: 0.9
-            },150);
-            $(wrapperClass).addClass('small');
+        var m = $(window).scrollTop() - $('.sticky-wrapper').offset().top;
+        reduce = m > maxReduce ? maxReduce : m;
+        var nHeight = oHeight - reduce;
+        var nLHeight = oLHeight - reduce;
+        $(wrapperClass).css('height', nHeight+'px');
+        $('.sub-menu').css('top', nHeight+'px')
+        $(wrapperClass).find('#menu-main-navigation > li').css('height', nHeight+'px');
+        $(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', nLHeight+'px');
+        if (m > 8) {
+            $(wrapperClass).find('#menu-main-navigation > li >  a').css('font-size','15px');
+        }
+        if (m > 15) {
+            $(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','14px');
         }
     }
-    else
-    {
-        if($(wrapperClass).data('size') == 'small')
-        {
-            $(wrapperClass).data('size','big');
-            $(wrapperClass).stop().animate({
-                zoom: 1
-            },150);
-            $(wrapperClass).removeClass('small');
-        }  
+    else {
+        //restore to original state
+        $(wrapperClass).css('height', oHeight+'px');
+        $(wrapperClass).find('#menu-main-navigation > li').css('height', oHeight+'px');
+        $(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','16px');
+        $(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', oLHeight+'px');
     }
 });
 </script>

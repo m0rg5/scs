@@ -24,7 +24,7 @@ body.browserSafari #access .sf-menu ul {
 #access .sf-menu li {
 	/*float:none;*/
 	position:relative;
-	line-height: 29px;
+	line-height: 33px;
 	/*padding:11px 17px 13px;*/
 	padding: 0;
 	display: inline-block;
