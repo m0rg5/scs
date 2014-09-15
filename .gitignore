@@ -63,6 +63,7 @@ node_modules
 !favicon.png
 !robots.txt
 !humans.txt
+wp-content/plugins/wordfence/tmp/configCache.php
 
 #=============================================#
 #     wp-content, except plugins and themes   #
