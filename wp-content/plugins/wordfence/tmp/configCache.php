@@ -1,4 +1,0 @@
-<?php
-/* Wordfence temporary file security header */
-echo "Nothing to see here!\n"; exit(0);
-?>a:17:{s:9:"cacheType";s:0:"";s:15:"firewallEnabled";s:1:"1";s:6:"apiKey";s:192:"3efaf4054ccdcb26572cc4b70610a719d6adf422f4834d939c6d70b5717e71714257ea282365847c014e0ccaa165a09072b1cb0d9b155921dce72963a2651b71f7cfa74dbfb1282a72f530648f4e6a5b170b4c3a113ac450ef7e4274f1581f5d";s:9:"howGetIPs";s:11:"REMOTE_ADDR";s:9:"IPGetFail";s:0:"";s:18:"liveTrafficEnabled";s:1:"1";s:14:"disableCookies";s:1:"0";s:10:"tourClosed";s:1:"1";s:10:"autoUpdate";s:1:"0";s:16:"autoUpdateChoice";s:1:"1";s:11:"alertEmails";s:22:"morgan@reelists.com.au";s:17:"actUpdateInterval";s:0:"";s:7:"debugOn";s:1:"0";s:6:"encKey";s:16:"2f41688a4755c65f";s:25:"liveTraf_ignorePublishers";s:1:"1";s:18:"liveTraf_ignoreIPs";s:0:"";s:17:"liveTraf_ignoreUA";s:0:"";}
