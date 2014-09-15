@@ -1074,15 +1074,14 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 .flexslider .slides > li {position:relative;}
 
 /*style for sticky menu - atheotsky*/
-.isStuck {
-    z-index: 100;
-    margin-top: -5px;
-    height: 50px;
+.is-sticky .navigation {
+    z-index: 999;
 }
-.isStuck #access .sf-menu>li>a {
-    height: 22px;
-    font-size: 14px;
+
+.is-sticky .small #access .sf-menu ul {
+    top: 58px;
 }
-.isStuck #access .sf-menu ul {
-    top: 50px;
+
+.sticky-wrapper {
+    margin-bottom: 33px;
 }

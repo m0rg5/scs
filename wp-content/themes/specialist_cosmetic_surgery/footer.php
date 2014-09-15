@@ -71,15 +71,45 @@ s.parentNode.insertBefore(pa, s);
        })();
 </script>
 <!-- end jet phone-analytics -->
-<script src="<?php echo includes_url('/js/stickUp.min.js'); ?>"></script>
-<!--STICKY MENU-->
+
+<!--STICK MENU WITH ANIMATION-->
+<script src="<?php echo includes_url('/js/jquery.sticky.js'); ?>"></script>
 <script type="text/javascript">
-jQuery(function($) {
-    $(document).ready( function() {
-        $('.navigation').stickUp({ topMargin: -50 });
-    });
+var wrapperClass = '.navigation';
+$(document).ready(function(){
+    $(wrapperClass).sticky({topSpacing:0});
+});
+
+$(function(){
+    $(wrapperClass).data('size','big');
+});
+
+$(window).scroll(function(){
+    if($(window).scrollTop() > $('.sticky-wrapper').offset().top)
+    {
+        if($(wrapperClass).data('size') == 'big')
+        {
+            $(wrapperClass).data('size','small');
+            $(wrapperClass).stop().animate({
+                zoom: 0.9
+            },150);
+            $(wrapperClass).addClass('small');
+        }
+    }
+    else
+    {
+        if($(wrapperClass).data('size') == 'small')
+        {
+            $(wrapperClass).data('size','big');
+            $(wrapperClass).stop().animate({
+                zoom: 1
+            },150);
+            $(wrapperClass).removeClass('small');
+        }  
+    }
 });
 </script>
+<!--END OF STICKY MENU-->
 
 <?php wp_footer(); ?>
 <!--delacon tracking code start-->
