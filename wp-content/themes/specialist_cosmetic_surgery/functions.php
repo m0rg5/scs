@@ -191,7 +191,7 @@ function scs_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 	
-	register_sidebar( array(
+	/*register_sidebar( array(
 		'name' => __( 'Footer Widget 1', 'squeeze' ),
 		'id' => 'sidebar-3',
 		'description' => __( 'An optional widget area for your site footer', 'squeeze' ),
@@ -209,10 +209,10 @@ function scs_widgets_init() {
 		'after_widget' => "</section>",
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
-	) );
+	) );*/
 
 	register_sidebar( array(
-		'name' => __( 'Footer Widget 3', 'squeeze' ),
+		'name' => __( 'Footer Widget 1', 'squeeze' ),
 		'id' => 'sidebar-5',
 		'description' => __( 'An optional widget area for your site footer', 'squeeze' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -220,6 +220,17 @@ function scs_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer Widget 2', 'squeeze' ),
+		'id' => 'sidebar-6',
+		'description' => __( 'An optional widget area for your site footer', 'squeeze' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget' => "</section>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
 	register_sidebar( array(
 		'name' => __( 'Footer Widget Area', 'squeeze' ),
 		'id' => 'copyright-widget',
