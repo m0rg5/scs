@@ -28,9 +28,7 @@
   </div>
   <!-- #copyright .widget-area -->
   <?php endif; ?>
-  <div id="site-generator">
-    <div class="site-by">Site by <a href="http://squeezecreative.com.au" rel="external nofollow">Squeeze Creative</a></div>
-  </div>  </div> </div>
+    </div> </div>
 </footer>
 <!-- #colophon -->
 </div>
