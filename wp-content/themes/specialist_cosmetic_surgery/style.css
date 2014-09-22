@@ -1077,3 +1077,6 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 .is-sticky .navigation { z-index: 999; }
 .is-sticky .small #access .sf-menu ul { top: 58px; }
 .sticky-wrapper { margin-bottom: 33px; }
+
+/*override nextgen style to enable show gallery button function*/
+.ngg-galleryoverview { display: none !important; }
