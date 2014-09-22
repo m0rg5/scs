@@ -111,6 +111,22 @@ $(window).scroll(function(){
 </script>
 <!--END OF STICKY MENU-->
 
+<!--GALLERY BUTTONS-->
+<script>
+jQuery(document).ready(function(){
+    jQuery('.bk-button').click(function(){
+        try {
+            jQuery('.ngg-fancybox').first().click();
+            return false;
+        }
+        catch (e) {
+            // just need to try
+        }
+    });
+});
+</script>
+<!--END OF BUTTONS-->
+
 <?php wp_footer(); ?>
 <!--delacon tracking code start-->
 <script type="text/javascript">
