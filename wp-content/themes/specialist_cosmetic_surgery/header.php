@@ -237,7 +237,12 @@ var player = new YT.Player('youtubevideo', {
 			   ?>
 			     <li <?php if(trim($video_url)) { ?> class="slide play3" <?php }?>>
 				<?php if(trim($video_url)) { ?>
+				    <iframe style="margin-top:-20px;" id="video" width="100%" height="380" src="<?php echo $video_url; ?>" frameborder="0" allowfullscreen></iframe>
+                <?php
+                /*
 				    <iframe style="margin-top:-20px;" id="video" width="100%" height="380" src="<?php echo $video_url; ?>?enablejsapi=1&version=3&playerapiid=youtubevideo&hd=1;rel=0;controls=0;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                 */
+                ?>
 				<?php } else { ?>
 				 
 				<?php if($banner_img_large){ ?>
