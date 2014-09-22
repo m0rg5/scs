@@ -676,7 +676,8 @@ class WP_FAQ_Manager
 				$displayfaq .= '<div class="single-faq'.$expand_a.'">';
 				$displayfaq .= '<'.$htype.' id="'.$slug.'" class="faq-question'.$expand_b.'">'.$title.'</'.$htype.'>';
 				$displayfaq .= '<div class="faq-answer" rel="'.$slug.'">';
-				$displayfaq .= $nofilter == true ? $content : apply_filters('the_content', $content);
+				/*$displayfaq .= $nofilter == true ? $content : apply_filters('the_content', $content); // conflict with nextGen by using apply_filters('the_content', $content)*/
+				$displayfaq .= $content;
 				if ($exlink == true)
 					$displayfaq .= '<p class="faq-link"><a href="'.$link.'" title="'.$title.'">'.$extext.'</a></p>';
 

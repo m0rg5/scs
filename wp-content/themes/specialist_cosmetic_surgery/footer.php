@@ -74,38 +74,37 @@ s.parentNode.insertBefore(pa, s);
 <script src="<?php echo includes_url('/js/jquery.sticky.js'); ?>"></script>
 <script type="text/javascript">
 var wrapperClass = '.navigation';
-var oHeight = $(wrapperClass).height();
-var oLHeight = parseInt($('#menu-main-navigation > li').css('line-height'));
+var oHeight = jQuery(wrapperClass).height();
+var oLHeight = parseInt(jQuery('#menu-main-navigation > li').css('line-height'));
 var maxReduce = 20;
-$(document).ready(function(){
-    $(wrapperClass).sticky({topSpacing:0});
+jQuery(document).ready(function(){
+    jQuery(wrapperClass).sticky({topSpacing:0});
 });
 
-$(window).scroll(function(){
-    $(wrapperClass).find('#menu-main-navigation > li >  a').css('line-height','auto');
-    if($(window).scrollTop() > $('.sticky-wrapper').offset().top)
+jQuery(window).scroll(function(){
+    jQuery(wrapperClass).find('#menu-main-navigation > li >  a').css('line-height','auto');
+    if(jQuery('.sticky-wrapper').offset() && jQuery(window).scrollTop() > jQuery('.sticky-wrapper').offset().top)
     {
-        var m = $(window).scrollTop() - $('.sticky-wrapper').offset().top;
+        var m = jQuery(window).scrollTop() - jQuery('.sticky-wrapper').offset().top;
         reduce = m > maxReduce ? maxReduce : m;
         var nHeight = oHeight - reduce;
         var nLHeight = oLHeight - reduce;
-        $(wrapperClass).css('height', nHeight+'px');
-        $('.sub-menu').css('top', nHeight+'px')
-        $(wrapperClass).find('#menu-main-navigation > li').css('height', nHeight+'px');
-        $(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', nLHeight+'px');
+        jQuery(wrapperClass).css('height', nHeight+'px');
+        jQuery('.sub-menu').css('top', nHeight+'px')
+        jQuery(wrapperClass).find('#menu-main-navigation > li').css('height', nHeight+'px');
+        jQuery(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', nLHeight+'px');
         if (m > 8) {
-            $(wrapperClass).find('#menu-main-navigation > li >  a').css('font-size','15px');
+            jQuery(wrapperClass).find('#menu-main-navigation > li >  a').css('font-size','15px');
         }
         if (m > 15) {
-            $(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','14px');
+            jQuery(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','14px');
         }
     }
     else {
         //restore to original state
-        $(wrapperClass).css('height', oHeight+'px');
-        $(wrapperClass).find('#menu-main-navigation > li').css('height', oHeight+'px');
-        $(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','16px');
-        $(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', oLHeight+'px');
+        jQuery(wrapperClass).removeAttr('style');
+        jQuery(wrapperClass).find('#menu-main-navigation > li').removeAttr('style');
+        jQuery(wrapperClass).find('#menu-main-navigation > li > a').removeAttr('style');
     }
 });
 </script>
