@@ -90,7 +90,7 @@ jQuery(window).scroll(function(){
         var nHeight = oHeight - reduce;
         var nLHeight = oLHeight - reduce;
         jQuery(wrapperClass).css('height', nHeight+'px');
-        jQuery('.sub-menu').css('top', nHeight+'px')
+        jQuery('.sub-menu').css('top', nHeight+'px');
         jQuery(wrapperClass).find('#menu-main-navigation > li').css('height', nHeight+'px');
         jQuery(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', nLHeight+'px');
         if (m > 8) {
@@ -103,6 +103,7 @@ jQuery(window).scroll(function(){
     else {
         //restore to original state
         jQuery(wrapperClass).removeAttr('style');
+        jQuery('.sub-menu').removeAttr('style');
         jQuery(wrapperClass).find('#menu-main-navigation > li').removeAttr('style');
         jQuery(wrapperClass).find('#menu-main-navigation > li > a').removeAttr('style');
     }
