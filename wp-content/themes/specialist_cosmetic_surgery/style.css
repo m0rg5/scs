@@ -1074,9 +1074,55 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 .flexslider .slides > li {position:relative;}
 
 /*style for sticky menu - atheotsky*/
-.is-sticky .navigation { z-index: 999; }
+.is-sticky .navigation { z-index: 100; }
 .is-sticky .small #access .sf-menu ul { top: 58px; }
 .sticky-wrapper { margin-bottom: 33px; }
 
 /*override nextgen style to enable show gallery button function*/
-.ngg-galleryoverview { display: none !important; }
+#gallery-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    text-align: center;
+    z-index: 103;
+}
+
+#gallery-overlay {
+    display:none;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 101;
+}
+
+.slideshowlink { display: none; }
+
+.ngg-galleryoverview {
+    max-width: 60% !important;
+    height: 500px !important;
+    margin: 5% auto;
+    position: relative;
+    top: 60px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 7px black;
+    overflow-y: scroll;
+    z-index: 104;
+    display: none;
+}
+
+.ngg-gallery-thumbnail-box {
+    margin: 5px !important;
+}
+
+.gallery-title {
+    text-transform: uppercase;
+    font-weight: bold !important;
+    text-decoration: underline;
+}

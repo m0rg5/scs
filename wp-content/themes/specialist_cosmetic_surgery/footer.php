@@ -112,16 +112,38 @@ jQuery(window).scroll(function(){
 <!--END OF STICKY MENU-->
 
 <!--GALLERY BUTTONS-->
+<div id="gallery-overlay"></div>
 <script>
+showgallery = function() {
+    if (jQuery('.ngg-galleryoverview')) {
+        jQuery('#gallery-overlay').fadeIn();
+        jQuery('.ngg-galleryoverview').fadeIn();
+    }
+}
+
+hidegallery = function() {
+    if (jQuery('.ngg-galleryoverview')) {
+        jQuery('.ngg-galleryoverview').fadeOut();
+        jQuery('#gallery-overlay').fadeOut();
+    }
+}
+
+/*execute it gallery hide immediately*/
+if (jQuery('.ngg-galleryoverview')) {
+    jQuery('.ngg-galleryoverview').hide();
+}
+
 jQuery(document).ready(function(){
+    /*append content to gallery */
+    jQuery('<p class="gallery-title title">Image Gallery</p>').insertBefore('.slideshowlink');
+    jQuery('.ngg-galleryoverview').wrap('<div id="gallery-wrapper"/>');
+
     jQuery('.bk-button').click(function(){
-        try {
-            jQuery('.ngg-fancybox').first().click();
-            return false;
-        }
-        catch (e) {
-            // just need to try
-        }
+        showgallery();
+        return false;
+    });
+    jQuery('#gallery-overlay').click(function(){
+        hidegallery();
     });
 });
 </script>
