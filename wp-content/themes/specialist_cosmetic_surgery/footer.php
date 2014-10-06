@@ -170,6 +170,20 @@ jQuery(document).ready(function() {
 </script>
 <!--END OF YOUTUBE-->
 
+<!--ADD CSS3 SUPPORT FOR IE-->
+<!--[if IE]>
+<script type="text/javascript" src="path/to/PIE.js"></script>
+<![endif]-->
+<script>
+jQuery(function() {
+    if (window.PIE) {
+        jQuery('.ngg-galleryoverview').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+
 <?php wp_footer(); ?>
 <!--delacon tracking code start-->
 <script type="text/javascript">
