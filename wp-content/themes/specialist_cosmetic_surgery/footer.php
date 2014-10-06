@@ -149,6 +149,27 @@ jQuery(document).ready(function(){
 </script>
 <!--END OF BUTTONS-->
 
+<!--FIX YOUTUBE OVERLAP-->
+<script>
+jQuery(document).ready(function() {
+    jQuery("iframe").each(function(){
+        var ifr_source = jQuery(this).attr('src');
+        var wmode = "wmode=transparent";
+        if(ifr_source) {
+            if(ifr_source.indexOf('?') != -1)
+            {
+                jQuery(this).attr('src',ifr_source+'&'+wmode);
+            }
+            else
+            {
+                jQuery(this).attr('src',ifr_source+'?'+wmode);
+            }
+        }
+    });
+});
+</script>
+<!--END OF YOUTUBE-->
+
 <?php wp_footer(); ?>
 <!--delacon tracking code start-->
 <script type="text/javascript">

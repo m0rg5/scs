@@ -1128,3 +1128,8 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 }
 
 #access .sf-menu li ul.sub-menu { z-index: 99; }
+
+.ngg-gallery-thumbnail-box {
+    display: inline-block !important;
+    float: none !important;
+}
