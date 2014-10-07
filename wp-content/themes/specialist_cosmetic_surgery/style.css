@@ -1137,5 +1137,6 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 @media only screen and (max-width : 480px) {
     .ngg-galleryoverview {
         max-width: 80% !important;
+        overflow-y: scroll !important;
     }
 }
