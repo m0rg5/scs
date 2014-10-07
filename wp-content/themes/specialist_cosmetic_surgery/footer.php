@@ -77,37 +77,39 @@ var wrapperClass = '.navigation';
 var oHeight = jQuery(wrapperClass).height();
 var oLHeight = parseInt(jQuery('#menu-main-navigation > li').css('line-height'));
 var maxReduce = 20;
-jQuery(document).ready(function(){
-    jQuery(wrapperClass).sticky({topSpacing:0});
-});
+if (jQuery(window).width() >= 768 ) {
+    jQuery(document).ready(function(){
+        jQuery(wrapperClass).sticky({topSpacing:0});
+    });
 
-jQuery(window).scroll(function(){
-    jQuery(wrapperClass).find('#menu-main-navigation > li >  a').css('line-height','auto');
-    if(jQuery('.sticky-wrapper').offset() && jQuery(window).scrollTop() > jQuery('.sticky-wrapper').offset().top)
-    {
-        var m = jQuery(window).scrollTop() - jQuery('.sticky-wrapper').offset().top;
-        reduce = m > maxReduce ? maxReduce : m;
-        var nHeight = oHeight - reduce;
-        var nLHeight = oLHeight - reduce;
-        jQuery(wrapperClass).css('height', nHeight+'px');
-        jQuery('.sub-menu').css('top', nHeight+'px');
-        jQuery(wrapperClass).find('#menu-main-navigation > li').css('height', nHeight+'px');
-        jQuery(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', nLHeight+'px');
-        if (m > 8) {
-            jQuery(wrapperClass).find('#menu-main-navigation > li >  a').css('font-size','15px');
+    jQuery(window).scroll(function(){
+        jQuery(wrapperClass).find('#menu-main-navigation > li >  a').css('line-height','auto');
+        if(jQuery('.sticky-wrapper').offset() && jQuery(window).scrollTop() > jQuery('.sticky-wrapper').offset().top)
+        {
+            var m = jQuery(window).scrollTop() - jQuery('.sticky-wrapper').offset().top;
+            reduce = m > maxReduce ? maxReduce : m;
+            var nHeight = oHeight - reduce;
+            var nLHeight = oLHeight - reduce;
+            jQuery(wrapperClass).css('height', nHeight+'px');
+            jQuery('.sub-menu').css('top', nHeight+'px');
+            jQuery(wrapperClass).find('#menu-main-navigation > li').css('height', nHeight+'px');
+            jQuery(wrapperClass).find('#menu-main-navigation > li > a').css('line-height', nLHeight+'px');
+            if (m > 8) {
+                jQuery(wrapperClass).find('#menu-main-navigation > li >  a').css('font-size','15px');
+            }
+            if (m > 15) {
+                jQuery(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','14px');
+            }
         }
-        if (m > 15) {
-            jQuery(wrapperClass).find('#menu-main-navigation > li > a').css('font-size','14px');
+        else {
+            //restore to original state
+            jQuery(wrapperClass).removeAttr('style');
+            jQuery('.sub-menu').removeAttr('style');
+            jQuery(wrapperClass).find('#menu-main-navigation > li').removeAttr('style');
+            jQuery(wrapperClass).find('#menu-main-navigation > li > a').removeAttr('style');
         }
-    }
-    else {
-        //restore to original state
-        jQuery(wrapperClass).removeAttr('style');
-        jQuery('.sub-menu').removeAttr('style');
-        jQuery(wrapperClass).find('#menu-main-navigation > li').removeAttr('style');
-        jQuery(wrapperClass).find('#menu-main-navigation > li > a').removeAttr('style');
-    }
-});
+    });
+}
 </script>
 <!--END OF STICKY MENU-->
 

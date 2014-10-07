@@ -663,7 +663,7 @@ body { min-width: 768px; }
 #main { padding: 0 20px; width: auto; }
 #banner { width: 100%; }
 body .flexslider { width: 659px; float: none; margin: 0 auto 30px; clear: both; }
-.homemenu { float: none; margin: 0 auto; }
+/*.homemenu { float: none; margin: 0 auto; }*/
 body .navigation nav#access { width: 90%; padding: 0 5%; }
 body #rotating-images-rotator_1, body #rotating-images-rotator-wrapper_1 { width: 100%; height: 100px; }
 body #rotating-images-rotator-wrapper_1 img { max-width: 100%; width: 100%; }
