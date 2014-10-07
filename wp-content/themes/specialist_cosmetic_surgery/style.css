@@ -1103,16 +1103,16 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 .slideshowlink { display: none; }
 
 .ngg-galleryoverview {
-    max-width: 60% !important;
-    height: 500px !important;
+    max-width: 760px !important;
+    height: 520px !important;
     margin: 5% auto;
     position: relative;
     top: 60px;
     background: white;
-    border-radius: 0px;
+    border-radius: 5px;
     padding: 10px;
     box-shadow: 2px 2px 7px black;
-    overflow-y: scroll !important;
+    overflow: hidden !important;
     z-index: 104;
     display: none;
 }
@@ -1132,4 +1132,10 @@ div.wpcf7-mail-sent-ok { display: none !important; }
 .ngg-gallery-thumbnail-box {
     display: inline-block !important;
     float: none !important;
+}
+
+@media only screen and (max-width : 480px) {
+    .ngg-galleryoverview {
+        max-width: 80% !important;
+    }
 }
