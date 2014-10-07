@@ -1,7 +1,6 @@
 /*
 
 Theme Name: Specialist Cosmetic Surgery
-
 Author:SCS
 
 Author URI: 
@@ -1109,7 +1108,7 @@ div.wpcf7-mail-sent-ok { display: none !important; }
     position: relative;
     top: 60px;
     background: white;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 10px;
     box-shadow: 2px 2px 7px black;
     overflow-y: scroll !important;
