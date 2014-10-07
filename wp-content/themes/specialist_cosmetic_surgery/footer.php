@@ -137,7 +137,7 @@ if (jQuery('.ngg-galleryoverview')) {
 
 jQuery(document).ready(function(){
     /*append content to gallery */
-    jQuery('<p class="gallery-title title">Image Gallery</p>').insertBefore('.slideshowlink');
+    /*jQuery('<p class="gallery-title title">Image Gallery</p>').insertBefore('.slideshowlink');*/
     jQuery('.ngg-galleryoverview').wrap('<div id="gallery-wrapper"/>');
 
     jQuery('.bk-button').click(function(){
