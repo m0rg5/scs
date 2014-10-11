@@ -186,6 +186,23 @@ jQuery(function() {
 });
 </script>
 
+<!--FIX GALLERY MIDDLE ALIGNMENT-->
+<script>
+alignGallery = function() {
+    if (jQuery('.ngg-galleryoverview').size() > 0) {
+        var remainH = jQuery(window).height() - jQuery('.ngg-galleryoverview').first().outerHeight();
+        remainH = remainH > 0 ? remainH : 0;
+        var marginTop = Math.floor(remainH/2);
+        jQuery('.ngg-galleryoverview').first().css('margin-top', marginTop + 'px');
+    }
+}
+alignGallery();
+jQuery(window).resize(function(){
+    alignGallery();
+});
+</script>
+<!--END OF DYNAMIC ALIGNMENT-->
+
 <?php wp_footer(); ?>
 <!--delacon tracking code start-->
 <script type="text/javascript">

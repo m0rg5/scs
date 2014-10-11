@@ -73,6 +73,17 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
 # This removes all of the BPS security code and replaces it with just the default WP htaccess code
 # To restore this file use BPS Restore or activate BulletProof Mode for your Root folder again.
 
