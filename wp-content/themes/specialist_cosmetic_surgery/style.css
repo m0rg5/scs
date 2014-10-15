@@ -880,6 +880,7 @@ a.responsive-menu:hover { border: 0; background: #da5221; }
 #main { padding: 0 20px; width: auto; }
 #banner { width: 100%; }
 .flexslider { display: none; }
+/*body .flexslider { width: 300px; float: none; margin: 0 auto 20px; clear: both; }*/
 .homemenu { float: none; margin: 0 auto; }
 body #rotating-images-rotator_1, body #rotating-images-rotator-wrapper_1 { display: none; }
 body #rotating-images-rotator-wrapper_1 img { display: none; }
@@ -1138,4 +1139,13 @@ div.wpcf7-mail-sent-ok { display: none !important; }
         max-width: 80% !important;
         overflow-y: scroll !important;
     }
+}
+
+.mobile-view {
+    display: none;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .mobile-view { display: block; }
+    .mobile-view.youtube { width: 300px; float: none; margin: 25px auto 0; clear: both; }
 }
