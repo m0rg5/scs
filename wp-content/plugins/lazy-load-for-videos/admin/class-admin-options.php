@@ -66,6 +66,14 @@ class Lazyload_Videos_Admin {
 				&& (get_option('lly_opt') == false) // test if Lazy Load for Youtube is deactivated
 	    	) {
 
+            /*hide related video here*/
+            if (strstr($url, '?')) {
+                $url = $url . '&rel=0';
+            }
+            else {
+                $url = $url . '?rel=0';
+            }
+
 	    	$a_class = 'lazy-load-youtube preview-lazyload preview-youtube';
 	    	$a_class = apply_filters( 'lazyload_preview_url_a_class_youtube', $a_class );
 
