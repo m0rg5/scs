@@ -200,6 +200,14 @@ alignGallery();
 jQuery(window).resize(function(){
     alignGallery();
 });
+jQuery(document).ajaxSuccess(function(){
+    try {
+        alignGallery();
+    }
+    catch (e) {
+        // do nothing here
+    }
+});
 </script>
 <!--END OF DYNAMIC ALIGNMENT-->
 
