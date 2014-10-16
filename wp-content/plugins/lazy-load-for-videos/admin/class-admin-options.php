@@ -81,6 +81,7 @@ class Lazyload_Videos_Admin {
  			
  			// Wrap container around $preview_url
        		$preview_url = '<div class="container-lazyload preview-lazyload container-youtube"'. $this->get_schema_prop_video() .'>' . $preview_url . '</div>';
+            /*use apply_filters to enable developer to update content in theme - atheotsky*/
        		return apply_filters( 'lazyload_replace_video_preview_url_youtube', $preview_url );
 	    }
 
