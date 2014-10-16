@@ -292,6 +292,19 @@ var player = new YT.Player('youtubevideo', {
 <div class="homemenu">
   <?php wp_nav_menu( array( 'theme_location' => 'Home Graphic Menu') ); ?>
 </div>
+<div class="mobile-view youtube">
+</div>
+<script type="text/javascript">
+try {
+    cloneYoutube = jQuery('.flexslider').first().find('iframe').first().clone().show();
+    cloneYoutube.attr('id', 'youtube-clone');
+    cloneYoutube.attr('height', '170');
+    cloneYoutube.appendTo('.mobile-view.youtube');
+}
+catch (e) {
+    // do nothing here
+}
+</script>
 <?php } 
     else {
 ?>
