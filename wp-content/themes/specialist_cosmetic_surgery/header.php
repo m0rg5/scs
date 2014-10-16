@@ -95,7 +95,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 jQuery(window).load(function() {
     jQuery('#banner .flexslider').flexslider({
-        animation: "slide",
+        //animation: "slide",
         directionNav: true,
         controlNav: false,
         slideshow: false,
@@ -238,11 +238,6 @@ var player = new YT.Player('youtubevideo', {
 			     <li <?php if(trim($video_url)) { ?> class="slide play3" <?php }?>>
 				<?php if(trim($video_url)) { ?>
 				    <iframe style="margin-top:-20px;" id="video" width="100%" height="380" src="<?php echo $video_url; ?>" frameborder="0" allowfullscreen></iframe>
-                <?php
-                /*
-				    <iframe style="margin-top:-20px;" id="video" width="100%" height="380" src="<?php echo $video_url; ?>?enablejsapi=1&version=3&playerapiid=youtubevideo&hd=1;rel=0;controls=0;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                 */
-                ?>
 				<?php } else { ?>
 				 
 				<?php if($banner_img_large){ ?>
@@ -260,30 +255,6 @@ var player = new YT.Player('youtubevideo', {
 					</li>
 			      
    <?php endwhile; ?>
-    <!-- <li> <img src="<?php bloginfo( 'template_url' );?>/images/slider-1.jpg">
-	        <div class="text_content">
-			  <h2>Specialising in cosmetic procedures for women</h2>
-			  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-			  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takima.</p>
-			  <a href="" class="readmore">Read More</a>
-			</div>
-	 </li>
-	  <li> <img src="<?php bloginfo( 'template_url' );?>/images/slider-2.jpg">
-	     <div class="text_content">
-			  <h2>Specialising in cosmetic procedures for women</h2>
-			  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-			  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takima.</p>
-			  <a href="" class="readmore">Read More</a>
-			</div>
-	  </li>
-	  	  <li> <img src="<?php bloginfo( 'template_url' );?>/images/slider-3.jpg">
-		     <div class="text_content">
-			  <h2>Specialising in cosmetic procedures for women</h2>
-			  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-			  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takima.</p>
-			  <a href="" class="readmore">Read More</a>
-			</div>
-		  </li>-->
    </ul>
    <?php } 
    wp_reset_query(); 
@@ -295,14 +266,24 @@ var player = new YT.Player('youtubevideo', {
 <div class="mobile-view youtube">
 </div>
 <script type="text/javascript">
-try {
-    cloneYoutube = jQuery('.flexslider').first().find('iframe').first().clone().show();
-    cloneYoutube.attr('id', 'youtube-clone');
-    cloneYoutube.attr('height', '170');
-    cloneYoutube.appendTo('.mobile-view.youtube');
-}
-catch (e) {
-    // do nothing here
+if (jQuery(window).width() < 480) {
+    try {
+        cloneYoutube = jQuery('.flexslider').first().find('iframe').first().clone().show();
+        cloneYoutube.attr('id', 'youtube-clone');
+        cloneYoutube.attr('height', '170');
+        var url = cloneYoutube.attr('src');
+        /*disable autoplay*/
+        if (url.indexOf('autoplay=1') != -1) {
+            cloneYoutube.attr('src', url.replace('autoplay=1', 'autoplay=0'));
+
+            /*disable autoplay on desktop view*/
+            jQuery('.flexslider').first().find('iframe').first().css('src', url.replace('autoplay=1', 'autoplay=0'));
+        }
+        cloneYoutube.appendTo('.mobile-view.youtube');
+    }
+    catch (e) {
+        // do nothing here
+    }
 }
 </script>
 <?php } 
